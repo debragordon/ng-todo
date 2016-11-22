@@ -19,4 +19,10 @@ app.controller("ItemListCtrl", function($scope, ItemFactory){
     });
   };
 
+  $scope.inputChange = function(thingy){
+    ItemFactory.editItem(thingy).then(function(response){
+      console.log("ctrl inputChange response", response);
+    });
+  };
+
 });
