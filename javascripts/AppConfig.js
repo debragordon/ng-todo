@@ -10,13 +10,15 @@ let isAuth = (AuthFactory) => new Promise((resolve, reject) => {
 
 app.run(function($rootScope, $location, FIREBASE_CONFIG, AuthFactory){
   firebase.initializeApp(FIREBASE_CONFIG);
+
   $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
     let logged = AuthFactory.isAuthenticated();
     let appTo;
 
     if(currRoute.originalPath){
-      appTo = currRoute.originalPath.indexOf('/auth' !== -1);
+      appTo = currRoute.originalPath.indexOf('/auth') !== -1;
     }
+    console.log("anything",appTo);
 
     if(!appTo && !logged){
       event.preventDefault();
