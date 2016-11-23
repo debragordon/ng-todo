@@ -1,12 +1,15 @@
 "use strict";
 
-app.controller("ItemListCtrl", function($scope, ItemFactory){
+app.controller("ItemListCtrl", function($scope, $rootScope, ItemFactory){
 
   $scope.items = [];
 
   let getItems = function(){
-    ItemFactory.getItemList().then(function(fbItems){
+    console.log("here", $rootScope.user);
+
+    ItemFactory.getItemList($rootScope.user.uid).then(function(fbItems){
       $scope.items = fbItems;
+      console.log("fbItems", fbItems);
     });
   };
 

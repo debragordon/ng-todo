@@ -3,17 +3,36 @@
     "item0": {
       "task": "mow the lawn",
       "isCompleted": true,
-      "assignedTo": "Debra"
+      "assignedTo": "Debra",
+      "uid": "7srHBpEgQxXa4Lf9XMNfYvrMido1"
     },
     "item1": {
       "task": "mow the lawn",
       "isCompleted": true,
-      "assignedTo": "Tara"
+      "assignedTo": "Tara",
+      "uid": "NO1Nfuw4o5UK5Djm3SczCAj0ZSI3"
     },
     "item2": {
       "task": "write thank you notes",
       "isCompleted": false,
-      "assignedTo": "Tara"
+      "assignedTo": "Tara",
+      "uid": "NO1Nfuw4o5UK5Djm3SczCAj0ZSI3"
+    },
+    "item4": {
+      "task": "mow the lawn",
+      "isCompleted": true,
+      "assignedTo": "Debra",
+      "uid": "7srHBpEgQxXa4Lf9XMNfYvrMido1"
+    }
+  },
+  "users": {
+    "user0": {
+      "uid": "7srHBpEgQxXa4Lf9XMNfYvrMido1",
+      "username": "Debra"
+    },
+    "user1": {
+      "uid": "NO1Nfuw4o5UK5Djm3SczCAj0ZSI3",
+      "username": "Lady A"
     }
   }
 }
